@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 
 const users = ["Eve", "Alice", "Charlie", "Bob", "David"];
 
@@ -16,6 +16,12 @@ const MemoComponent = () => {
 
   const sortedUsers = useMemo(() => {
     return sortUsers(users, sortingType);
+  }, [sortingType]);
+
+  const sortedUsersFunction = useCallback(() => {
+    if (sortingType === "ascending") {
+      return users.sort();
+    } else return users.sort((a, b) => b.localeCompare(a));
   }, [sortingType]);
 
   return (
