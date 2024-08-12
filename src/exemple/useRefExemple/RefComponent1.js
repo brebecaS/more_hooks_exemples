@@ -1,23 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 
 const RefComponent1 = () => {
-  const ref = useRef(1);
-  const [text, setText] = useState("");
+  const [text, setText] = useState("text");
+  const renderCount = useRef(1);
 
   useEffect(() => {
-    ref.current++;
+    renderCount.current = renderCount.current + 1;
   });
 
   return (
     <div>
       <input
         type="text"
-        value={text}
         onChange={(e) => {
           setText(e.target.value);
         }}
       />
-      <h3>I re-rendered {ref.current} times.</h3>
+      <h3>I re-rendered {renderCount.current} times.</h3>
     </div>
   );
 };

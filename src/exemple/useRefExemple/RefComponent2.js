@@ -1,17 +1,27 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 const RefComponent2 = () => {
-  const inputRef = useRef();
+  const divRef = useRef(null); // const divRef = { current: null }
+  const inputRef = useRef(null); // const inputRef = { current: null }
 
-  function focusInput() {
-    inputRef.current.focus();
-  }
+  useEffect(() => {
+    setTimeout(() => {
+      divRef.current.style.color = "green";
+    }, 2000);
+  });
 
   return (
-    <div>
+    <>
+      <div ref={divRef}>RefComponent2</div>
       <input ref={inputRef} type="text" />
-      <button onClick={focusInput}>Focus Input</button>
-    </div>
+      <button
+        onClick={() => {
+          inputRef.current.focus();
+        }}
+      >
+        Focus input
+      </button>
+    </>
   );
 };
 export default RefComponent2;
