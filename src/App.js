@@ -5,7 +5,7 @@ import RefComponent2 from "./exemple/useRefExemple/RefComponent2";
 import MemoComponent from "./exemple/useMemoExemple/MemoComponent";
 
 function App() {
-  return <RefComponent2 />;
+  return <RefComponent1 />;
 }
 
 export default App;
