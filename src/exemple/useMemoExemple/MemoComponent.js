@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 
 const MemoComponent = () => {
-  const darkTheme = false;
+  const [darkTheme, setDarkTheme] = useState(false);
 
   return (
     <div
@@ -10,7 +10,15 @@ const MemoComponent = () => {
         color: darkTheme ? "#ccc" : "#333",
         height: "100vh",
       }}
-    ></div>
+    >
+      <button
+        onClick={() => {
+          setDarkTheme(!darkTheme);
+        }}
+      >
+        Click me
+      </button>
+    </div>
   );
 };
 export default MemoComponent;
