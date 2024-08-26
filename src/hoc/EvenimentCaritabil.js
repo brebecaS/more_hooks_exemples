@@ -1,4 +1,4 @@
-import AsociatiaMereuAproape from "./AsociatiaMereuAproap";
+import AsociatiaMereuAproape from "./AsociatiaMereuAproape";
 import AsociatiaUNICEF from "./AsociatiaUNICEF";
 
 const EvenimentCaritabil = () => {
