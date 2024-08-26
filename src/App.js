@@ -4,10 +4,10 @@ import RefComponent0 from "./exemple/useRefExemple/RefComponent0";
 import RefComponent2 from "./exemple/useRefExemple/RefComponent2";
 import MemoComponent from "./exemple/useMemoExemple/MemoComponent";
 import EvenimentCaritabil from "./hoc/EvenimentCaritabil";
+import EvenimentCaritabil2 from "./customHook/EvenimentCaritabil";
 
 function App() {
-  //   return <></>;
-  return <EvenimentCaritabil />;
+  return <EvenimentCaritabil2 />;
 }
 
 export default App;
