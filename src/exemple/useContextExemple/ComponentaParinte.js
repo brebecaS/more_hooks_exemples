@@ -22,7 +22,7 @@ const ComponentaParinte = () => {
         Increase font size by 10 px
       </button>
       <FontSizeContext.Provider value={fontSize}>
-        <ThemeContext.Provider value={theme}>
+        <ThemeContext.Provider value={{ theme, setTheme }}>
           <ComopnentaIntermediara />
         </ThemeContext.Provider>
       </FontSizeContext.Provider>
