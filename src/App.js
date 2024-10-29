@@ -3,11 +3,11 @@ import RefComponent1 from "./exemple/useRefExemple/RefComponent1";
 import RefComponent0 from "./exemple/useRefExemple/RefComponent0";
 import RefComponent2 from "./exemple/useRefExemple/RefComponent2";
 import MemoComponent from "./exemple/useMemoExemple/MemoComponent";
-import EvenimentCaritabil from "./hoc/EvenimentCaritabil";
-import EvenimentCaritabil2 from "./customHook/EvenimentCaritabil";
+// import EvenimenintCaritabil from "./hoc/EvenimentCaritabil";
+import EvenimentCaritabil from "./custom-hook/EvenimentCaritabil";
 
 function App() {
-  return <EvenimentCaritabil2 />;
+  return <EvenimentCaritabil />;
 }
 
 export default App;
