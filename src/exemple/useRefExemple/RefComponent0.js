@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+
 const RefComponent0 = () => {
   const [count, setCount] = useState(0);
 
@@ -10,6 +11,7 @@ const RefComponent0 = () => {
       <button
         onClick={() => {
           setCount((prevCount) => prevCount + 1);
+
           if (count === 3) {
             ref.current = count;
           }
