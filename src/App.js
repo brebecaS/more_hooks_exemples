@@ -4,9 +4,10 @@ import Example2 from "./exemple/useMemoExample/Example2";
 import EvenimentCaritabil from "./custom-hook/EvenimentCaritabil";
 
 import RefExample3 from "./exemple/useRefExemple/Example3";
+import CallbackExample from "./exemple/useCallbackExample/Example1";
 
 function App() {
-  return <RefExample3 />;
+  return <CallbackExample />;
 }
 
 export default App;
